@@ -1,0 +1,2 @@
+export const SET_TABLE_HEIGHT = 'SET_TABLE_HEIGHT'
+export const SET_LOADING = 'SET_LOADING'

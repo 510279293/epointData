@@ -1,0 +1,62 @@
+/*路由切换*/
+.router-fade-enter-active {
+  transition: all .2s ease;
+}
+.router-fade-leave-active {
+  transition: all .2s ease;
+}
+.router-fade-enter, .router-fade-leave-to {
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+/*下侧进入效果*/
+.bottomFade-enter-active {
+  transition: all .3s ease;
+}
+.bottomFade-leave-active {
+  transition: all .3s ease;
+  opacity: 0;
+  // transition: all .1s ease;
+  // transition: all .1s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.bottomFade-enter, .bottomFade-leave-to {
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+/*左侧进入效果*/
+.leftFade-enter-active {
+  transition: all .3s ease;
+}
+.leftFade-leave-active {
+  transition: all .3s ease;
+  /*opacity: 0;*/
+  /*transition: all .1s cubic-bezier(1.0, 0.5, 0.8, 1.0);*/
+}
+.leftFade-enter {
+  transform: translateX(100px);
+  opacity: 0;
+}
+.leftFade-leave-to {
+  transform: translateX(-500px);
+  opacity: 0;
+}
+
+/*渐入出效果*/
+.easeFade-enter-active {
+  transition: all .3s ease;
+  opacity: 1;  
+}
+.easeFade-leave-active {
+  transition: all .3s ease;
+  opacity: 0;
+  /*transition: all .1s cubic-bezier(1.0, 0.5, 0.8, 1.0);*/
+}
+.easeFade-enter {
+  opacity: 1;
+}
+.easeFade-leave-to
+/* for below version 2.1.8 */ {
+  opacity: 0;
+}

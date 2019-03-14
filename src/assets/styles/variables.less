@@ -1,0 +1,72 @@
+@base-width: 1220px; // 主体最大宽度
+@bg-color: #f3f3f8; // 全局背景
+@line-color: #f0f0f0; // 分割线
+@border-color: #e1e5ee; // 边框色
+@placeholder-color: #c0cad3; // 占位符
+@disabled-text: #aab0bc; // 不可用字体
+@theme-color: #343268; // 主题颜色
+@theme-hover: #444287; // 主题颜色Hover
+@main-font: #5a5c5e; // 主题文字颜色
+@main-font-hover: #5858f1; // 主题文字Hover
+@secondary-font: #9798ab; // 次要文字
+@placeholder-font: #c0cad3; // 占位文字颜色
+@scrollbar: #f5f8fa; // 滚动条颜色
+@ope-color: #3cb774; // 操作主题颜色
+@ope-hover: #59c389; // 操作主题颜色Hover
+@ope-active: #16A256; // 操作主题颜色Active
+@ope-disabled: #e1e5ee; // 操作主题颜色Disabled
+@table-th: #f5f8fa; // 表格头部颜色
+
+// 多行文本截断
+.lineClamp(@line:1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: @line;
+  -webkit-box-orient: vertical;
+}
+
+// 清除浮动
+.clearfix() {
+  &:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0;
+    clear: both;
+  }
+}
+
+// borderBox
+.border-box {
+  box-sizing: border-box;
+}
+
+// 模块
+.moudles-card {
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(204,204,204,0.5);
+  border-radius: 3px;
+  transition: .3s;
+  .border-box;
+}
+
+// 表格式页面框架
+.content-wrap {
+  height: calc(~'100vh - 88px');
+  overflow-y: hidden;
+  .moudles-card;
+}
+
+// 文字禁止选中
+.select-none {
+  user-select: none;
+}
+
+/*
+ * @param value {Number} 1440 设计稿下元素宽度
+ * @return 换算百分比返回宽度
+ */
+.widthPercent (@value: 0) {
+  width: @value / 1440 * 100vw;
+}

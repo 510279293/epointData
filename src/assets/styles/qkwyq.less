@@ -1,0 +1,60 @@
+/*————— 快速书写配置wyq—————*/
+@font30: 30px;
+
+.cen { text-align: center; }
+.blf { float: left; }
+.brt { float: right; }
+.mg { margin: 0 auto }
+.oh { overflow: hidden; }
+.w100 { width: 100%; }
+.hg(@linh) {
+  height:@linh;
+  line-height:@linh;
+}
+.out:before, .out:after{
+  content:'';
+  display: table;
+  visibility: hidden;
+}
+.clearfix:after {
+  display: table;
+  content: '';
+  clear: both;
+}
+.wes {
+  overflow:hidden;
+  word-wrap:normal;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
+.wes-more(@num) {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: @num;
+  -webkit-box-orient: vertical;
+  white-space:normal; 
+}
+
+.boxShadow {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15);
+  border: 0;
+  border-radius: 0;
+  &:hover {
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+  }
+}
+.midBlock{
+  display: inline-block;
+  vertical-align: middle;
+}
+.import-star(@px){
+  position: relative;
+  &::before{
+    content: '*';
+    color: #FB3363;
+    position: absolute;
+    top: 0;
+    right: @px;
+  }
+}

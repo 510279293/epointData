@@ -1,0 +1,9 @@
+{
+  "name": "wqt-admin-1.4",
+  "short_name": "wqt-admin-1.4",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#4DBA87",
+  "icon": "/static/images/favicon.ico"
+}

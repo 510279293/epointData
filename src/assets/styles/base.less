@@ -1,0 +1,39 @@
+@import "./normalize.less";
+@import './variables.less';
+@import './transition.less';
+@import './icon.less';
+
+::-webkit-scrollbar {
+  width: 0.5vw;
+  max-width: 5px;
+  height: 0.5vw;
+}
+::-webkit-scrollbar-track {
+  background: @scrollbar;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: @scrollbar;
+}
+::-webkit-scrollbar-thumb {
+  background: #d8d8d8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-corner {
+  background: @scrollbar;
+}
+::-webkit-scrollbar-resizer  {
+  background: @scrollbar;
+}
+
+
+.el-input .el-input__inner {
+  vertical-align: top;
+  padding: 0 10px;
+}
+.el-select .el-input:hover .el-input__inner { border-color: @ope-color; }
+.el-select-dropdown.el-popper .popper__arrow { display: none; }
+.el-select-dropdown.el-popper[x-placement^="bottom"] { margin-top: 5px; }
+.el-select-dropdown .el-select-dropdown__item {
+  padding: 0 10px;
+  &:hover{ background-color: #f6f9f9}
+}

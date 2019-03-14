@@ -1,0 +1,140 @@
+[
+  {
+    "name": "首页",
+    "funcName": "/home",
+    "icon": "&#xe608;",
+    "id": "0000"
+  },
+  {
+    "name": "渠道管控",
+    "funcName": "/channel",
+    "icon": "&#xe608;",
+    "id": "0001",
+    "childMenus": [
+      {
+        "name": "商品管理",
+        "funcName": "/channel/commodity"
+      },
+      {
+        "name": "店铺管理",
+        "funcName": "/channel/storeManager"
+      }
+    ]
+  },
+  {
+    "name": "同行监控",
+    "funcName": "/peerMonit",
+    "icon": "&#xe605;",
+    "id": "0002",
+    "childMenus": [
+      {
+        "name": "品牌-商品",
+        "funcName": "/peerMonit/brandGoods"
+      },
+      {
+        "name": "品牌-店铺",
+        "funcName": "/peerMonit/brandShop"
+      },
+      {
+        "name": "店铺监控",
+        "funcName": "/peerMonit/shopMonit"
+      },
+      {
+        "name": "单品监控",
+        "funcName": "/peerMonit/itemMonit"
+      }
+    ]
+  },
+  {
+    "name": "数据监控",
+    "funcName": "/dataMonit",
+    "icon": "&#xe603;",
+    "id": "0003",
+    "childMenus": [
+      {
+        "name": "监控管理",
+        "funcName": "/dataMonit/manage"
+      },
+      {
+        "name": "维权管理",
+        "funcName": "/dataMonit/protection"
+      }
+    ]
+  },
+  {
+    "name": "采集工具",
+    "funcName": "/collect",
+    "icon": "&#xe60a;",
+    "id": "0004",
+    "childMenus": [
+      {
+        "name": "实时采集",
+        "funcName": "/collect/tool"
+      }
+    ]
+  },
+  {
+    "name": "数据分析",
+    "funcName": "/analysis",
+    "icon": "&#xe604;",
+    "id": "0005",
+    "childMenus": [
+      {
+        "name": "销售概况",
+        "funcName": "/analysis/sales"
+      },
+      {
+        "name": "品牌定价",
+        "funcName": "/analysis/brandPricing"
+      },
+      {
+        "name": "地区分析",
+        "funcName": "/analysis/arrangement"
+      },
+      {
+        "name": "店铺分析",
+        "funcName": "/analysis/storeAnalyze"
+      },
+      {
+        "name": "维权分析",
+        "funcName": "/analysis/rtProtection"
+      }
+    ]
+  },
+  {
+    "name": "数据对比",
+    "funcName": "/dataContrast",
+    "icon": "&#xe609;",
+    "id": "0006",
+    "childMenus": [
+      {
+        "name": "品牌对比X",
+        "funcName": "/dataContrast/brandCompare"
+      }
+    ]
+  },
+  {
+    "name": "设置",
+    "funcName": "/setting",
+    "icon": "&#xe606;",
+    "id": "0007",
+    "childMenus": [
+      {
+        "name": "店铺设置",
+        "funcName": "/setting/storeSet"
+      },
+      {
+        "name": "账户设置",
+        "funcName": "/setting/accountSet"
+      },
+      {
+        "name": "客户信息",
+        "funcName": "/setting/customerInfo"
+      },
+      {
+        "name": "品牌图片",
+        "funcName": "/setting/brandPicture"
+      }
+    ]
+  }
+]
